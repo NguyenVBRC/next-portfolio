@@ -1,4 +1,4 @@
-  "use server";
+"use server";
 
 import React from "react";
 import { Resend } from "resend";
@@ -26,7 +26,7 @@ export const sendEmail = async (formData: FormData) => {
   let data;
   try {
     data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
+      from: "Contact Form <JimmyNguyenPortfolio@resend.dev>",
       to: "nguyen89.mke@gmail.com",
       subject: "Message from Portfolio Contact Form",
       reply_to: senderEmail,
