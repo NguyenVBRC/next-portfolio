@@ -7,9 +7,7 @@ import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
 
 import Navigation from "@/components/layout/Navigation";
-import Footer from "@/components/layout/Footer";
 import ThemeSwitch from "@/components/buttons/ThemeSwitch";
-import SocialsBtn from "@/components/buttons/SocialsBtn";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +31,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                         {children}
 
                         <Toaster position="top-right" />
-                        <SocialsBtn />
                         <ThemeSwitch />
                     </ActiveSectionContextProvider>
                 </ThemeContextProvider>

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function About() {
     return (
         <motion.section
-            className="mb-28 max-w-[30rem] text-start leading-8 sm:mb-20 scroll-mt-28"
+            className="flex flex-col mb-28 max-w-[30rem] text-center sm:text-start leading-8 sm:mb-20 scroll-mt-28"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.175 }}

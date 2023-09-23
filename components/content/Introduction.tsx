@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import About from "./About";
+import SocialsBtn from "../buttons/SocialsBtn";
 
 export default function Intro() {
     const { ref } = useSectionInView("Home", 0.5);
@@ -24,13 +25,14 @@ export default function Intro() {
                 <p className="text-gray-500">
                     Building web applications with cutting edge technologies.
                 </p>
-                <p className="text-xs mt-3">
+                <p className="text-xs my-3">
                     <span className="text-gray-500  ">
                         This portfolio was built with React & Next.js (App Router & Server Actions),
                         TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel
                         hosting.{" "}
                     </span>
                 </p>
+                <SocialsBtn />
             </motion.div>
             <About />
         </section>
