@@ -1,19 +1,17 @@
-import Intro from "@/components/content/Introduction";
-import About from "@/components/content/About";
-import Contact from "@/components/content/Contact";
+import ContactBtn from "@/components/buttons/ContactBtn";
+import BusinessCard from "@/components/content/businessCard/BusinessCard";
 import Technologies from "@/components/content/Technologies";
 import Experience from "@/components/content/Experience";
-import Projects from "@/components/content/projects/Projects";
 import SectionDivider from "@/components/SectionDivider";
 
 export default function Home() {
     return (
         <main className="flex flex-col items-center px-4">
-            <Intro />
-            <SectionDivider />
+            <BusinessCard />
+            <ContactBtn />
+            {/* <SectionDivider /> */}
             <Technologies />
             <Experience />
-            <Contact />
         </main>
     );
 }
