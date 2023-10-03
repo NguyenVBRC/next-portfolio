@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 import FrontCard from "./FrontCard";
-import About from "../About";
+import About from "./BackCard";
 
 export default function Intro() {
   const controls = useAnimation();
@@ -21,7 +21,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex flex-col max-w-[75rem] text-center sm:mb-0 sm:flex-row scroll-mt-[100rem]"
+      className="flex flex-col max-w-[75rem] text-center sm:mb-0 sm:flex-row scroll-mt-[100rem] hover:cursor-pointer"
       onClick={flipCard}
     >
       <motion.div
@@ -30,7 +30,7 @@ export default function Intro() {
         animate={controls}
         transition={{ duration: 0.5 }}
       >
-        <div className="rounded-xl object-cover border-[0.35rem] border-white shadow-xl p-7 relative">
+        <div className="rounded-xl object-cover border-[0.35rem] border-gray-900 shadow-xl p-7 relative dark:border-teal-50">
           {!isFlipped ? <FrontCard /> : <About />}
         </div>
       </motion.div>
