@@ -12,9 +12,8 @@ import ThemeSwitch from "@/components/buttons/ThemeSwitch";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Jimmy's Portfolio | React Developer",
-  description:
-    "Jimmy Nguyen is a full stack developer with focus on React Frontend Development.",
+    title: "Jimmy's Portfolio | React Developer",
+    description: "Jimmy Nguyen is a full stack developer with focus on React Frontend Development.",
 };
 
 export default function RootLayout({

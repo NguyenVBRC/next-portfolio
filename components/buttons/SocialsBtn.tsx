@@ -45,6 +45,7 @@ const SocialsBtn = () => {
       </a>
     </motion.div>
   );
+
 };
 
 export default SocialsBtn;
