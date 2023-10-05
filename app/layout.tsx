@@ -16,25 +16,21 @@ export const metadata = {
     description: "Jimmy Nguyen is a full stack developer with focus on React Frontend Development.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en" className="!scroll-smooth">
-      <body
-        className={`${inter.className} bg-teal-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
-      >
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            {/* <Navigation /> */}
-            {children}
-            <Toaster position="top-right" />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
-        </ThemeContextProvider>
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+    return (
+        <html lang="en" className="!scroll-smooth">
+            <body
+                className={`${inter.className} bg-teal-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+            >
+                <ThemeContextProvider>
+                    <ActiveSectionContextProvider>
+                        {/* <Navigation /> */}
+                        {children}
+                        <Toaster position="top-right" />
+                        <ThemeSwitch />
+                    </ActiveSectionContextProvider>
+                </ThemeContextProvider>
+            </body>
+        </html>
+    );
 }
