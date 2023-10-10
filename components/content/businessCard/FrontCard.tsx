@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -6,7 +8,6 @@ import SocialsBtn from "../../buttons/SocialsBtn";
 
 const FrontCard = () => {
   const [animateHeight, setAnimateHeight] = useState("230px");
-  const smallScreenHeight = window.innerWidth < 405 ? "300px" : "230px";
 
   useEffect(() => {
     if (window.innerWidth < 405) {
