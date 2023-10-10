@@ -30,7 +30,7 @@ export default function Intro() {
         animate={controls}
         transition={{ duration: 0.5 }}
       >
-        <div className="rounded-xl object-cover border-[0.35rem] border-gray-900 shadow-xl p-7 relative dark:border-teal-50">
+        <div className="rounded-xl border-[0.35rem] border-gray-900 shadow-xl p-7 relative dark:border-teal-50">
           {!isFlipped ? <FrontCard /> : <About />}
         </div>
       </motion.div>
