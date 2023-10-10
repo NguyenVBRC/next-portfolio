@@ -10,7 +10,7 @@ import toast from "react-hot-toast";
 export default function Contact() {
   return (
     <motion.section
-      className="fixed bottom-[6rem] w-[90%] text-center border-[0.35rem] border-gray-950 shadow-xl rounded-xl p-[1rem] bg-gray-100 dark:bg-gray-950 dark:border-black/40 dark:border-teal-50 sm:bottom-5 sm:right-[11rem] sm:w-[25rem] sm:bottom-5"
+      className="z-40 fixed bottom-[6rem] w-[90%] text-center border-[0.35rem] border-gray-950 shadow-xl rounded-xl p-[1rem] bg-gray-100 dark:bg-gray-950 dark:border-black/40 dark:border-teal-50 sm:bottom-5 sm:right-[11rem] sm:w-[25rem] sm:bottom-5"
       transition={{
         duration: 0.5,
         type: "spring",
