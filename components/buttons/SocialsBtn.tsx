@@ -14,7 +14,7 @@ const SocialsBtn = () => {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   const btnStyles =
-    "h-[40px] w-[40px] bg-white text-gray-700 flex justify-center items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60";
+    "h-[40px] w-[40px] bg-white text-gray-700 flex justify-center items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack";
 
   return (
     <motion.div className="flex flex-row justify-center gap-2 mt-5 pt-5 border-t">
