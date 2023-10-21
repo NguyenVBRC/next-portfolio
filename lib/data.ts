@@ -43,12 +43,12 @@ export const experiencesData = [
     date: "2023 - present",
   },
   {
-    title: "Web Developer (Freelance)",
+    title: "Full Stack Developer",
     location: "Remote",
     description:
-      "Career transition after completing a Web Developer course. Quit my recruiter role to enhance my programming skills full-time. Primary focus: MERN Tech Stack.",
+      "Developed responsive web interfaces using HTML, CSS, JavaScript, and React, while also managing server-side programming with Node.js and Express, designing database schemas, building RESTful APIs, and implementing a robust testing strategy for application reliability and code quality.",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2023",
+    date: "2021 - 2023",
   },
   {
     title: "Technical Recruiter",
@@ -56,7 +56,7 @@ export const experiencesData = [
     description:
       "Full Cycle Recruitment in Human Resources. Screening, onboarding, reporting, and auditing candidate information throughout the recruitment life cycle.",
     icon: React.createElement(LuGraduationCap),
-    date: "2018-2022",
+    date: "2018-2021",
   },
 ] as const;
 
