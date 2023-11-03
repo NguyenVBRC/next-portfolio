@@ -21,7 +21,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex flex-col max-w-[75rem] text-center sm:mb-0 sm:flex-row scroll-mt-[100rem] hover:cursor-pointer"
+      className="flex flex-col max-w-[75rem] text-center sm:mb-0 sm:flex-row scroll-mt-[100rem]"
       onClick={flipCard}
     >
       <motion.div

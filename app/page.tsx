@@ -3,15 +3,17 @@ import BusinessCard from "@/components/content/businessCard/BusinessCard";
 import Technologies from "@/components/content/Technologies";
 import Experience from "@/components/content/Experience";
 import SectionDivider from "@/components/SectionDivider";
+import Introduction from "@/components/content/Introduction";
 
 export default function Home() {
-    return (
-        <main className="flex flex-col items-center px-4">
-            <BusinessCard />
-            <ContactBtn />
-            {/* <SectionDivider /> */}
-            <Technologies />
-            <Experience />
-        </main>
-    );
+  return (
+    <main className="flex flex-col items-center px-4">
+      {/* <BusinessCard /> */}
+      <Introduction />
+      <ContactBtn />
+      {/* <SectionDivider /> */}
+      <Technologies />
+      <Experience />
+    </main>
+  );
 }

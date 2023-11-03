@@ -31,7 +31,9 @@ const FrontCard = () => {
       </div>
       <div className="flex justify-between items-end">
         <SocialsBtn />
-        <p className="absolute bottom-2 right-2">Click Me</p>
+        <p className="absolute bottom-2 right-2 m-[1rem] hover:cursor-pointer">
+          Click Me
+        </p>
       </div>
     </motion.div>
   );
