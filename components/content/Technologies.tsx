@@ -23,12 +23,17 @@ export default function Skills() {
   const { ref } = useSectionInView("Skills");
 
   return (
-    <section
-      id="skills"
-      ref={ref}
-      className="m-28 max-w-[60rem] scroll-mt-28 text-center sm:mb-40"
-    >
-      <SectionHeading>Technologies</SectionHeading>
+    <section id="skills" ref={ref} className="m-28 max-w-[60rem] scroll-mt-28 text-center sm:mb-40">
+      <motion.div
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+        viewport={{
+          once: true,
+        }}
+      >
+        <SectionHeading>Technologies</SectionHeading>
+      </motion.div>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li

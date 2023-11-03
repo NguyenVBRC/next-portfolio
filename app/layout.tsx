@@ -11,17 +11,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Jimmy's Portfolio | React Developer",
-  description:
-    "Jimmy Nguyen is a full stack developer with focus on React Frontend Development.",
+  description: "Jimmy Nguyen is a full stack developer with focus on React Frontend Development.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  const baseStyling =
-    "relative bg-teal-50 text-gray-950 pt-28 bg-gradient-to-br from-sky-500 to-indigo-100";
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const baseStyling = "relative bg-blue-950 pt-28";
 
   const mobileStyling = "sm:pt-36";
 

@@ -1,0 +1,7 @@
+{
+  "editor.wordWrapColumn": 500,
+  "html.format.wrapLineLength": 500,
+  "diffEditor.wordWrap": "off",
+  "editor.wordWrap": "off",
+  "prettier.printWidth": 200
+}
