@@ -2,6 +2,7 @@ import Introduction from "@/components/content/Introduction";
 import Technologies from "@/components/content/Technologies";
 import Experience from "@/components/content/Experience";
 import ContactBtn from "@/components/buttons/ContactBtn";
+import SocialsBtn from "@/components/buttons/SocialsBtn";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Technologies />
       <Experience />
       <ContactBtn />
+      <SocialsBtn />
     </main>
   );
 }

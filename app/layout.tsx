@@ -15,13 +15,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const baseStyling = "relative bg-blue-950 pt-28";
-
-  const mobileStyling = "sm:pt-36";
+  const baseStyling = "pt-28";
 
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${inter.className} ${baseStyling} ${mobileStyling}`}>
+      <body className={`${inter.className} bg-[#0a192f] ${baseStyling}`}>
         <ActiveSectionContextProvider>
           {/* <Navigation /> */}
           {children}
