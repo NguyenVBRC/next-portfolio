@@ -14,7 +14,7 @@ export default function ContactBtn() {
     <div className="flex flex-col items-center justify-center z-40">
       {showContact && <Contact />}
       <button
-        className="fixed bottom-5 right-20 text-teal-50 bg-gray-950 w-[5rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-teal-50 dark:border-slate-950 dark:border-2 dark:text-gray-950"
+        className="fixed bottom-5 right-5 border-[1px] border-[black] bg-teal-50 text-gray-950 w-[5rem] h-[3rem] rounded-full items-center justify-center hover:scale-[1.15] active:scale-105"
         onClick={handleClick}
       >
         Contact

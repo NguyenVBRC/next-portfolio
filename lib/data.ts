@@ -2,9 +2,6 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -53,8 +50,7 @@ export const experiencesData = [
   {
     title: "Technical Recruiter",
     location: "Brookfield, WI",
-    description:
-      "Full Cycle Recruitment in Human Resources. Screening, onboarding, reporting, and auditing candidate information throughout the recruitment life cycle.",
+    description: "Full Cycle Recruitment in Human Resources. Screening, onboarding, reporting, and auditing candidate information throughout the recruitment life cycle.",
     icon: React.createElement(LuGraduationCap),
     date: "2018-2021",
   },
@@ -63,40 +59,22 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    description: "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    // imageUrl: corpcommentImg,
   },
   {
     title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    description: "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    // imageUrl: rmtdevImg,
   },
   {
     title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    description: "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    // imageUrl: wordanalyticsImg,
   },
 ] as const;
 
-export const skillsData = [
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Framer Motion",
-  "Tailwind",
-  "RESTful APIs",
-  "HTML",
-  "CSS",
-  "TypeScript",
-  "Node.js",
-  "Git",
-  "GitHub",
-  "Prisma",
-  "MongoDB",
-] as const;
+export const skillsData = ["TypeScript", "Node", "React", "Next.js", "Tailwind"] as const;
