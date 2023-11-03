@@ -11,7 +11,7 @@ export default function Intro() {
         <h1 className="my-5 text-3xl sm:text-5xl">
           My name is <span className="font-bold">Jimmy Nguyen</span>.
         </h1>
-        <p className="my-3 text-gray-400 text-lg sm:text-2xl ">
+        <p className="my-3 text-gray-400 text-md sm:text-2xl ">
           I am a <span className="font-bold text-gray-50">Full Stack Developer</span> building web applications with cutting edge technologies.
         </p>
         {/* Borders */}
