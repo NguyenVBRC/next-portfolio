@@ -1,41 +1,40 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active-section-context";
+
+import DownloadResume from "./DownloadResume";
 
 const SocialsBtn = () => {
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const [showResumeDownload, setShowResumeDownload] = useState(false);
 
-  const btnStyles =
-    "h-[40px] w-[40px] bg-white text-gray-700 flex justify-center items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60";
+  const handleClick = () => {
+    setShowResumeDownload((prevShowResumeDownload) => !prevShowResumeDownload);
+  };
+
+  const btnStyles = "h-[40px] w-[40px] border-[1px] border-slate-50 text-gray-50 flex justify-center items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] cursor-pointer";
 
   return (
-    <motion.div className="flex flex-row justify-center gap-2 mt-5 pt-5 border-t">
-      <a className={btnStyles} href="/resume.pdf" download>
-        CV
-      </a>
-      <a
-        className={btnStyles}
-        href="https://www.linkedin.com/in/jimmynguyendev/"
-        target="_blank"
-      >
-        <BsLinkedin />
-      </a>
-      <a
-        className={btnStyles}
-        href="https://github.com/NguyenVBRC"
-        target="_blank"
-      >
-        <FaGithubSquare />
-      </a>
-    </motion.div>
+    <div className="relative">
+      <motion.div className="fixed left-5 bottom-5 flex flex-col justify-center items-center gap-4">
+        <a className={btnStyles} onClick={handleClick}>
+          CV
+        </a>
+        <a className={btnStyles} href="https://www.linkedin.com/in/jimmynguyendev/" target="_blank">
+          <BsLinkedin />
+        </a>
+        <a className={btnStyles} href="https://github.com/NguyenVBRC" target="_blank">
+          <FaGithubSquare />
+        </a>
+        <div className="h-[40px] border-[1px] border-slate-50"></div>
+      </motion.div>
+      {showResumeDownload && <DownloadResume />}
+    </div>
   );
 };
 
