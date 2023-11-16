@@ -91,6 +91,6 @@ export const skillsData = [
   "RESTful APIs",
   "HTML5",
   "CSS",
-  "Git",
   "UI Libraries",
+  "Git",
 ] as const;
