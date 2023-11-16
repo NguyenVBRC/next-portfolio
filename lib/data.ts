@@ -48,6 +48,14 @@ export const experiencesData = [
     date: "2021 - 2023",
   },
   {
+    title: "Full Stack Developer - Freelance",
+    location: "Remote",
+    description:
+      "Using the MERN techstack, created responsive web interfaces, while also managing server-side programming with Node.js and Express, building RESTful APIs.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2020 - 2021",
+  },
+  {
     title: "Technical Recruiter",
     location: "Brookfield, WI",
     description:
