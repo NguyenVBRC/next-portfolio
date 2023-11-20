@@ -53,15 +53,7 @@ export const experiencesData = [
     description:
       "Using the MERN techstack, created responsive web interfaces, while also managing server-side programming with Node.js and Express, building RESTful APIs.",
     icon: React.createElement(CgWorkAlt),
-    date: "2020 - 2021",
-  },
-  {
-    title: "Technical Recruiter",
-    location: "Brookfield, WI",
-    description:
-      "Full Cycle Recruitment in Human Resources. Screening, onboarding, reporting, and auditing candidate information throughout the recruitment life cycle.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2018-2021",
+    date: "2019 - 2021",
   },
 ] as const;
 
