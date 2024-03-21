@@ -32,29 +32,37 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Cloud Developer",
+    location: "Madison, WI",
+    description:
+      "Within a team of full stack developers, my niche is within the cloud. Specifically AWS, Azure, and GCP.",
+    icon: React.createElement(FaReact),
+    date: "2024 - present",
+  },
+  {
     title: "React Frontend Developer",
     location: "Milwaukee, WI",
     description:
       "Frontend Developer in title but Full Stack Developer in practice. My stack includes React, Next.js, Prisma, and MongoDB. Working with a small team where I'm a solo Frontend Developer tasked with completing all tasks that include UI work.",
     icon: React.createElement(FaReact),
-    date: "2023 - present",
+    date: "2023 - 2024",
   },
-  {
-    title: "Full Stack Developer",
-    location: "Remote",
-    description:
-      "Developed responsive web interfaces using HTML, CSS, JavaScript, and React, while also managing server-side programming with Node.js and Express, designing database schemas, building RESTful APIs, and implementing a robust testing strategy for application reliability and code quality.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2021 - 2023",
-  },
-  {
-    title: "Full Stack Developer - Freelance",
-    location: "Remote",
-    description:
-      "Using the MERN techstack, created responsive web interfaces, while also managing server-side programming with Node.js and Express, building RESTful APIs.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
+  // {
+  //   title: "Full Stack Developer",
+  //   location: "Remote",
+  //   description:
+  //     "Developed responsive web interfaces using HTML, CSS, JavaScript, and React, while also managing server-side programming with Node.js and Express, designing database schemas, building RESTful APIs, and implementing a robust testing strategy for application reliability and code quality.",
+  //   icon: React.createElement(CgWorkAlt),
+  //   date: "2021 - 2023",
+  // },
+  // {
+  //   title: "Full Stack Developer - Freelance",
+  //   location: "Remote",
+  //   description:
+  //     "Using the MERN techstack, created responsive web interfaces, while also managing server-side programming with Node.js and Express, building RESTful APIs.",
+  //   icon: React.createElement(CgWorkAlt),
+  //   date: "2019 - 2021",
+  // },
 ] as const;
 
 export const projectsData = [
@@ -82,15 +90,12 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "AWS",
+  "Azure",
   "TypeScript",
   "Node",
   "React",
   "Next13",
-  "Tailwind",
-  "MongoDb",
   "RESTful APIs",
-  "HTML5",
-  "CSS",
-  "UI Libraries",
   "Git",
 ] as const;
