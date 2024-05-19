@@ -35,7 +35,7 @@ export const experiencesData = [
     title: "Cloud Developer",
     location: "Madison, WI",
     description:
-      "Within a team of full stack developers, my niche is within the cloud. Specifically AWS, Azure, and GCP.",
+      "Within a team of full stack developers, my niche is within the cloud. Specifically AWS and Azure. Currently creating an internal tool that updates our project management boards when certain triggers are met on a user's calendar.",
     icon: React.createElement(FaReact),
     date: "2024 - present",
   },
